@@ -1,0 +1,5 @@
+alter session set "_ORACLE_SCRIPT"=true;
+create user MANAGER identified by "1234";
+GRANT CONNECT, RESOURCE, DBA TO MANAGER;
+GRANT ALL PRIVILEGES to MANAGER with admin option;
+GRANT UNLIMITED TABLESPACE TO MANAGER;
